@@ -1,0 +1,19 @@
+### Java / Maven ###
+target/
+*.jar
+*.war
+*.ear
+
+### Environment (secretos - nunca commitear) ###
+.env
+
+### IDEs ###
+.idea/
+*.iml
+.vscode/
+
+### Logs / Temp ###
+*.log
+result.txt
+log.txt
+META-INF/
