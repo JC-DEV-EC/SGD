@@ -26,10 +26,12 @@ mvn test
 Set in `.env` (local, gitignored) or as environment variables (Render):
 
 ```
-SPRING_DATASOURCE_URL=jdbc:postgresql://<pooler-host>:6543/postgres?pgbouncer=true&prepareThreshold=0
+SPRING_DATASOURCE_URL=jdbc:postgresql://<pooler-host>:5432/postgres
 SPRING_DATASOURCE_USERNAME=postgres.<project-ref>
 SPRING_DATASOURCE_PASSWORD=<password>
 ```
+
+Uses the Supabase **session pooler** (port 5432 on the pooler host): compatible with prepared statements, recommended for HikariCP.
 
 ## Architecture
 
